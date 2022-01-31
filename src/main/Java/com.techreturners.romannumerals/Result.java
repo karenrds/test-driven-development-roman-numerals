@@ -85,8 +85,6 @@ public class Result {
     public int convertRomanNumeralsToDigits(String str) {
         str = str.toUpperCase(Locale.ROOT);
         for (int i = 0; i < str.length(); i++) {
-            String strChar = Character.toString(str.charAt(i));
-
             int leftCharacter = value(str.charAt(i));
             if (i + 1 < str.length()) {
                 int rightCharacter = value(str.charAt(i + 1));
