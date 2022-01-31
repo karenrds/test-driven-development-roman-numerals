@@ -1,11 +1,11 @@
 # test-driven-development-roman-numerals
 
-Method to convert Roman numerals to digits
+Function to convert Roman numerals to digits
 when a small number is in front of a larger number, the larger number is subtracted from the smaller
 I = 1, V = 5 
 IV = 4
 
-Method to Convert digits to roman numerals
+Function to Convert digits to roman numerals
 checks when a given number is greater then 0 and is between and equal to 1 and 1000 and returns a roman numberal
 
 In Test case used @ParameterizedTest(), @MethodSource()
