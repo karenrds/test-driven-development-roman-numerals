@@ -6,7 +6,7 @@ public class Result {
     private int resultDigits = 0;
     private String resultRomanNumerals = "";
 
-    int value(char roman) {
+    int numericValue(char roman) {
         int numberValue = 0;
         switch (roman) {
             case 'I':
@@ -85,9 +85,9 @@ public class Result {
     public int convertRomanNumeralsToDigits(String str) {
         str = str.toUpperCase(Locale.ROOT);
         for (int i = 0; i < str.length(); i++) {
-            int leftCharacter = value(str.charAt(i));
+            int leftCharacter = numericValue(str.charAt(i));
             if (i + 1 < str.length()) {
-                int rightCharacter = value(str.charAt(i + 1));
+                int rightCharacter = numericValue(str.charAt(i + 1));
                 if (leftCharacter >= rightCharacter) {
                     resultDigits += leftCharacter;
                 } else {
